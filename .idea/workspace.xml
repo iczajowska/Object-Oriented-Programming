@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f82e312-143f-439c-a92e-b442949f2886" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1U2SvwFuwp70eDYuGntfaurGELb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/agh/cs/lab8" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="agh.cs.lab8" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/agh/cs/lab8" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.World8">
+    <configuration name="World8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab8.World8" />
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapDirectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapDirectionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NeverEndingMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NeverEndingMapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NeverEndingMapTest.isOccupiedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NeverEndingMapTest" />
+      <option name="METHOD_NAME" value="isOccupiedTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.World8" />
+        <item itemvalue="JUnit.NeverEndingMapTest" />
+        <item itemvalue="JUnit.All in lab1" />
+        <item itemvalue="JUnit.NeverEndingMapTest.isOccupiedTest" />
+        <item itemvalue="JUnit.MapDirectionTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f82e312-143f-439c-a92e-b442949f2886" name="Default Changelist" comment="" />
+      <created>1574553430733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574553430733</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="214" width="800" height="677" key="#Notifications" timestamp="1576424245184">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="214" width="800" height="677" key="#Notifications/0.27.1920.1053@0.27.1920.1053" timestamp="1576424245184" />
+    <state x="768" y="264" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1576348421727">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="768" y="264" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1576348421727" />
+    <state x="715" y="228" width="324" height="630" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1576324857060">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="715" y="228" width="324" height="630" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576324857060" />
+    <state x="295" y="300" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576424170936">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="295" y="300" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1576424170936" />
+    <state width="1874" height="344" key="GridCell.Tab.0.bottom" timestamp="1576424028409">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028409" />
+    <state width="1874" height="344" key="GridCell.Tab.0.center" timestamp="1576424028409">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028409" />
+    <state width="1874" height="344" key="GridCell.Tab.0.left" timestamp="1576424028408">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028408" />
+    <state width="1874" height="344" key="GridCell.Tab.0.right" timestamp="1576424028409">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028409" />
+    <state width="1874" height="344" key="GridCell.Tab.1.bottom" timestamp="1576424028410">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028410" />
+    <state width="1874" height="344" key="GridCell.Tab.1.center" timestamp="1576424028410">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028410" />
+    <state width="1874" height="344" key="GridCell.Tab.1.left" timestamp="1576424028409">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028409" />
+    <state width="1874" height="344" key="GridCell.Tab.1.right" timestamp="1576424028410">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028410" />
+    <state x="370" y="121" width="1024" height="845" key="SettingsEditor" timestamp="1576424291338">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="370" y="121" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1576424291338" />
+    <state x="608" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576424312035">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="608" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576424312035" />
+    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576324847711">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1053@0.27.1920.1053" timestamp="1576324847711" />
+  </component>
+</project>
