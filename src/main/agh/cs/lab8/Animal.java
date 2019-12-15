@@ -140,4 +140,11 @@ public class Animal implements IMapElement {
         this.energy+=energy;
     }
 
+    public String getGeneticCodeString(){
+        return this.geneticCode.toString();
+    }
+
+    public int [] getGeneticCode(){
+        return this.geneticCode.getGeneticCode();
+    }
 }

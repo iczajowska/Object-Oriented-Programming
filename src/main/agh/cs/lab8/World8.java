@@ -28,10 +28,10 @@ public class World8 {
         //MapDirection a=MapDirection.EAST;
         //System.out.println(a.rotation(1).toString());
         //public NeverEndingMap(int width, int height,int numbersOfAnimals, double junglePercent, int plantEnergy, int moveEnergy, int startEnergy)
-        IWorldMap neverEndingMap=new NeverEndingMap(5,5,10,0.3, 5, 1, 10);
+        IWorldMap neverEndingMap=new NeverEndingMap(5,5,5,0.3, 5, 1, 10);
         System.out.println(neverEndingMap.toString());
 
-        int days=50;
+        int days=100;
 
 
         neverEndingMap.placeGrass();
@@ -61,6 +61,15 @@ public class World8 {
             neverEndingMap.run();
             System.out.println(neverEndingMap.toString());
         }*/
+
+
+
+
+
+
+
+
+
 
     }
 }
