@@ -34,7 +34,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -137,34 +137,34 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="214" width="800" height="677" key="#Notifications/0.27.1920.1053@0.27.1920.1053" timestamp="1576424245184" />
-    <state x="768" y="264" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1576348421727">
+    <state x="768" y="264" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1576510439790">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="768" y="264" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1576348421727" />
-    <state x="715" y="228" width="324" height="630" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1576324857060">
+    <state x="768" y="264" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1576510439790" />
+    <state x="715" y="228" width="918" height="630" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1576506938739">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="715" y="228" width="324" height="630" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576324857060" />
+    <state x="715" y="228" width="918" height="630" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576506938739" />
     <state x="295" y="300" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576424170936">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="295" y="300" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1576424170936" />
-    <state width="1874" height="397" key="GridCell.Tab.0.bottom" timestamp="1576444456468">
+    <state width="1874" height="88" key="GridCell.Tab.0.bottom" timestamp="1576576304121">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="397" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1576444456468" />
-    <state width="1874" height="397" key="GridCell.Tab.0.center" timestamp="1576444456468">
+    <state width="1874" height="88" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1576576304121" />
+    <state width="1874" height="88" key="GridCell.Tab.0.center" timestamp="1576576304119">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="397" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1576444456468" />
-    <state width="1874" height="397" key="GridCell.Tab.0.left" timestamp="1576444456467">
+    <state width="1874" height="88" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1576576304119" />
+    <state width="1874" height="88" key="GridCell.Tab.0.left" timestamp="1576576304118">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="397" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1576444456467" />
-    <state width="1874" height="397" key="GridCell.Tab.0.right" timestamp="1576444456468">
+    <state width="1874" height="88" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1576576304118" />
+    <state width="1874" height="88" key="GridCell.Tab.0.right" timestamp="1576576304120">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="397" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576444456468" />
+    <state width="1874" height="88" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576576304120" />
     <state width="1874" height="344" key="GridCell.Tab.1.bottom" timestamp="1576424028410">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -181,17 +181,21 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1874" height="344" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028410" />
-    <state x="370" y="121" width="1024" height="845" key="SettingsEditor" timestamp="1576443862859">
+    <state x="370" y="121" width="1024" height="845" key="SettingsEditor" timestamp="1576514826828">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="370" y="121" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1576443862859" />
-    <state x="608" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576424312035">
+    <state x="370" y="121" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1576514826828" />
+    <state x="608" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576504477818">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="608" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576424312035" />
-    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576324847711">
+    <state x="608" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576504477818" />
+    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576506824361">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1053@0.27.1920.1053" timestamp="1576324847711" />
+    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1053@0.27.1920.1053" timestamp="1576506824361" />
+    <state x="255" y="235" width="440" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576508486668">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="255" y="235" width="440" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1576508486668" />
   </component>
 </project>

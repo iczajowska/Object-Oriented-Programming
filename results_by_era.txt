@@ -1,0 +1,900 @@
+Era number 0 statistics:
+Statistics:
+Number of living animals: 79
+Average length of life: 0,89
+Number of plants: 2
+Average energy of living animals: 12,41
+Most popular genes of all animals: 0
+
+
+Era number 1 statistics:
+Statistics:
+Number of living animals: 89
+Average length of life: 1,67
+Number of plants: 4
+Average energy of living animals: 10,12
+Most popular genes of all animals: 0
+
+
+Era number 2 statistics:
+Statistics:
+Number of living animals: 98
+Average length of life: 2,43
+Number of plants: 6
+Average energy of living animals: 8,29
+Most popular genes of all animals: 0
+
+
+Era number 3 statistics:
+Statistics:
+Number of living animals: 104
+Average length of life: 3,23
+Number of plants: 5
+Average energy of living animals: 6,87
+Most popular genes of all animals: 0
+
+
+Era number 4 statistics:
+Statistics:
+Number of living animals: 110
+Average length of life: 4,00
+Number of plants: 6
+Average energy of living animals: 6,09
+Most popular genes of all animals: 0
+
+
+Era number 5 statistics:
+Statistics:
+Number of living animals: 110
+Average length of life: 4,95
+Number of plants: 6
+Average energy of living animals: 5,28
+Most popular genes of all animals: 0
+
+
+Era number 6 statistics:
+Statistics:
+Number of living animals: 109
+Average length of life: 5,87
+Number of plants: 8
+Average energy of living animals: 4,71
+Most popular genes of all animals: 0
+
+
+Era number 7 statistics:
+Statistics:
+Number of living animals: 97
+Average length of life: 6,66
+Number of plants: 8
+Average energy of living animals: 4,30
+Most popular genes of all animals: 0
+
+
+Era number 8 statistics:
+Statistics:
+Number of living animals: 78
+Average length of life: 7,35
+Number of plants: 7
+Average energy of living animals: 4,86
+Most popular genes of all animals: 0
+
+
+Era number 9 statistics:
+Statistics:
+Number of living animals: 70
+Average length of life: 7,97
+Number of plants: 8
+Average energy of living animals: 5,27
+Most popular genes of all animals: 0
+
+
+Era number 10 statistics:
+Statistics:
+Number of living animals: 55
+Average length of life: 8,46
+Number of plants: 8
+Average energy of living animals: 6,07
+Most popular genes of all animals: 0
+
+
+Era number 11 statistics:
+Statistics:
+Number of living animals: 50
+Average length of life: 8,90
+Number of plants: 6
+Average energy of living animals: 6,48
+Most popular genes of all animals: 0
+
+
+Era number 12 statistics:
+Statistics:
+Number of living animals: 37
+Average length of life: 9,23
+Number of plants: 8
+Average energy of living animals: 9,92
+Most popular genes of all animals: 0
+
+
+Era number 13 statistics:
+Statistics:
+Number of living animals: 28
+Average length of life: 9,39
+Number of plants: 10
+Average energy of living animals: 12,14
+Most popular genes of all animals: 0
+
+
+Era number 14 statistics:
+Statistics:
+Number of living animals: 27
+Average length of life: 9,62
+Number of plants: 11
+Average energy of living animals: 11,59
+Most popular genes of all animals: 0
+
+
+Era number 15 statistics:
+Statistics:
+Number of living animals: 17
+Average length of life: 9,77
+Number of plants: 12
+Average energy of living animals: 18,59
+Most popular genes of all animals: 0
+
+
+Era number 16 statistics:
+Statistics:
+Number of living animals: 19
+Average length of life: 9,75
+Number of plants: 12
+Average energy of living animals: 16,79
+Most popular genes of all animals: 0
+
+
+Era number 17 statistics:
+Statistics:
+Number of living animals: 20
+Average length of life: 9,83
+Number of plants: 13
+Average energy of living animals: 17,00
+Most popular genes of all animals: 0
+
+
+Era number 18 statistics:
+Statistics:
+Number of living animals: 21
+Average length of life: 9,92
+Number of plants: 15
+Average energy of living animals: 16,19
+Most popular genes of all animals: 0
+
+
+Era number 19 statistics:
+Statistics:
+Number of living animals: 21
+Average length of life: 10,09
+Number of plants: 14
+Average energy of living animals: 15,19
+Most popular genes of all animals: 0
+
+
+Era number 20 statistics:
+Statistics:
+Number of living animals: 21
+Average length of life: 10,18
+Number of plants: 14
+Average energy of living animals: 16,14
+Most popular genes of all animals: 0
+
+
+Era number 21 statistics:
+Statistics:
+Number of living animals: 21
+Average length of life: 10,35
+Number of plants: 13
+Average energy of living animals: 17,05
+Most popular genes of all animals: 0
+
+
+Era number 22 statistics:
+Statistics:
+Number of living animals: 21
+Average length of life: 10,53
+Number of plants: 15
+Average energy of living animals: 18,90
+Most popular genes of all animals: 0
+
+
+Era number 23 statistics:
+Statistics:
+Number of living animals: 20
+Average length of life: 10,70
+Number of plants: 17
+Average energy of living animals: 18,85
+Most popular genes of all animals: 0
+
+
+Era number 24 statistics:
+Statistics:
+Number of living animals: 21
+Average length of life: 10,78
+Number of plants: 17
+Average energy of living animals: 17,00
+Most popular genes of all animals: 0
+
+
+Era number 25 statistics:
+Statistics:
+Number of living animals: 20
+Average length of life: 10,94
+Number of plants: 17
+Average energy of living animals: 18,85
+Most popular genes of all animals: 0
+
+
+Era number 26 statistics:
+Statistics:
+Number of living animals: 20
+Average length of life: 11,11
+Number of plants: 18
+Average energy of living animals: 18,85
+Most popular genes of all animals: 0
+
+
+Era number 27 statistics:
+Statistics:
+Number of living animals: 19
+Average length of life: 11,27
+Number of plants: 16
+Average energy of living animals: 18,84
+Most popular genes of all animals: 0
+
+
+Era number 28 statistics:
+Statistics:
+Number of living animals: 19
+Average length of life: 11,43
+Number of plants: 17
+Average energy of living animals: 21,00
+Most popular genes of all animals: 0
+
+
+Era number 29 statistics:
+Statistics:
+Number of living animals: 17
+Average length of life: 11,57
+Number of plants: 19
+Average energy of living animals: 23,65
+Most popular genes of all animals: 0
+
+
+Era number 30 statistics:
+Statistics:
+Number of living animals: 17
+Average length of life: 11,71
+Number of plants: 18
+Average energy of living animals: 22,65
+Most popular genes of all animals: 0
+
+
+Era number 31 statistics:
+Statistics:
+Number of living animals: 16
+Average length of life: 11,84
+Number of plants: 16
+Average energy of living animals: 26,81
+Most popular genes of all animals: 0
+
+
+Era number 32 statistics:
+Statistics:
+Number of living animals: 17
+Average length of life: 11,88
+Number of plants: 18
+Average energy of living animals: 29,00
+Most popular genes of all animals: 0
+
+
+Era number 33 statistics:
+Statistics:
+Number of living animals: 20
+Average length of life: 11,73
+Number of plants: 20
+Average energy of living animals: 23,80
+Most popular genes of all animals: 0
+
+
+Era number 34 statistics:
+Statistics:
+Number of living animals: 23
+Average length of life: 11,61
+Number of plants: 21
+Average energy of living animals: 19,83
+Most popular genes of all animals: 0
+
+
+Era number 35 statistics:
+Statistics:
+Number of living animals: 25
+Average length of life: 11,51
+Number of plants: 22
+Average energy of living animals: 17,36
+Most popular genes of all animals: 0
+
+
+Era number 36 statistics:
+Statistics:
+Number of living animals: 26
+Average length of life: 11,61
+Number of plants: 20
+Average energy of living animals: 15,73
+Most popular genes of all animals: 0
+
+
+Era number 37 statistics:
+Statistics:
+Number of living animals: 26
+Average length of life: 11,71
+Number of plants: 19
+Average energy of living animals: 17,08
+Most popular genes of all animals: 0
+
+
+Era number 38 statistics:
+Statistics:
+Number of living animals: 26
+Average length of life: 11,91
+Number of plants: 17
+Average energy of living animals: 18,38
+Most popular genes of all animals: 0
+
+
+Era number 39 statistics:
+Statistics:
+Number of living animals: 27
+Average length of life: 12,02
+Number of plants: 18
+Average energy of living animals: 19,70
+Most popular genes of all animals: 0
+
+
+Era number 40 statistics:
+Statistics:
+Number of living animals: 27
+Average length of life: 12,12
+Number of plants: 19
+Average energy of living animals: 19,48
+Most popular genes of all animals: 0
+
+
+Era number 41 statistics:
+Statistics:
+Number of living animals: 28
+Average length of life: 12,23
+Number of plants: 20
+Average energy of living animals: 18,54
+Most popular genes of all animals: 0
+
+
+Era number 42 statistics:
+Statistics:
+Number of living animals: 29
+Average length of life: 12,35
+Number of plants: 19
+Average energy of living animals: 17,62
+Most popular genes of all animals: 0
+
+
+Era number 43 statistics:
+Statistics:
+Number of living animals: 28
+Average length of life: 12,55
+Number of plants: 18
+Average energy of living animals: 19,39
+Most popular genes of all animals: 0
+
+
+Era number 44 statistics:
+Statistics:
+Number of living animals: 28
+Average length of life: 12,66
+Number of plants: 19
+Average energy of living animals: 20,57
+Most popular genes of all animals: 0
+
+
+Era number 45 statistics:
+Statistics:
+Number of living animals: 28
+Average length of life: 12,56
+Number of plants: 20
+Average energy of living animals: 20,39
+Most popular genes of all animals: 0
+
+
+Era number 46 statistics:
+Statistics:
+Number of living animals: 29
+Average length of life: 12,58
+Number of plants: 20
+Average energy of living animals: 19,45
+Most popular genes of all animals: 0
+
+
+Era number 47 statistics:
+Statistics:
+Number of living animals: 31
+Average length of life: 12,51
+Number of plants: 22
+Average energy of living animals: 17,94
+Most popular genes of all animals: 0
+
+
+Era number 48 statistics:
+Statistics:
+Number of living animals: 30
+Average length of life: 12,62
+Number of plants: 24
+Average energy of living animals: 17,57
+Most popular genes of all animals: 0
+
+
+Era number 49 statistics:
+Statistics:
+Number of living animals: 31
+Average length of life: 12,74
+Number of plants: 24
+Average energy of living animals: 16,03
+Most popular genes of all animals: 0
+
+
+Era number 50 statistics:
+Statistics:
+Number of living animals: 32
+Average length of life: 12,86
+Number of plants: 22
+Average energy of living animals: 15,19
+Most popular genes of all animals: 0
+
+
+Era number 51 statistics:
+Statistics:
+Number of living animals: 31
+Average length of life: 13,07
+Number of plants: 19
+Average energy of living animals: 16,61
+Most popular genes of all animals: 0
+
+
+Era number 52 statistics:
+Statistics:
+Number of living animals: 32
+Average length of life: 13,10
+Number of plants: 20
+Average energy of living animals: 17,66
+Most popular genes of all animals: 0
+
+
+Era number 53 statistics:
+Statistics:
+Number of living animals: 33
+Average length of life: 13,23
+Number of plants: 17
+Average energy of living animals: 16,76
+Most popular genes of all animals: 0
+
+
+Era number 54 statistics:
+Statistics:
+Number of living animals: 33
+Average length of life: 13,44
+Number of plants: 17
+Average energy of living animals: 18,79
+Most popular genes of all animals: 0
+
+
+Era number 55 statistics:
+Statistics:
+Number of living animals: 35
+Average length of life: 13,48
+Number of plants: 16
+Average energy of living animals: 17,91
+Most popular genes of all animals: 0
+
+
+Era number 56 statistics:
+Statistics:
+Number of living animals: 33
+Average length of life: 13,70
+Number of plants: 16
+Average energy of living animals: 19,82
+Most popular genes of all animals: 0
+
+
+Era number 57 statistics:
+Statistics:
+Number of living animals: 33
+Average length of life: 13,72
+Number of plants: 14
+Average energy of living animals: 20,09
+Most popular genes of all animals: 0
+
+
+Era number 58 statistics:
+Statistics:
+Number of living animals: 32
+Average length of life: 13,93
+Number of plants: 11
+Average energy of living animals: 22,22
+Most popular genes of all animals: 0
+
+
+Era number 59 statistics:
+Statistics:
+Number of living animals: 33
+Average length of life: 13,95
+Number of plants: 13
+Average energy of living animals: 23,64
+Most popular genes of all animals: 0
+
+
+Era number 60 statistics:
+Statistics:
+Number of living animals: 34
+Average length of life: 14,07
+Number of plants: 14
+Average energy of living animals: 21,97
+Most popular genes of all animals: 0
+
+
+Era number 61 statistics:
+Statistics:
+Number of living animals: 35
+Average length of life: 14,10
+Number of plants: 14
+Average energy of living animals: 20,97
+Most popular genes of all animals: 0
+
+
+Era number 62 statistics:
+Statistics:
+Number of living animals: 35
+Average length of life: 14,22
+Number of plants: 12
+Average energy of living animals: 21,14
+Most popular genes of all animals: 0
+
+
+Era number 63 statistics:
+Statistics:
+Number of living animals: 34
+Average length of life: 14,43
+Number of plants: 14
+Average energy of living animals: 23,12
+Most popular genes of all animals: 0
+
+
+Era number 64 statistics:
+Statistics:
+Number of living animals: 34
+Average length of life: 14,55
+Number of plants: 15
+Average energy of living animals: 22,15
+Most popular genes of all animals: 0
+
+
+Era number 65 statistics:
+Statistics:
+Number of living animals: 36
+Average length of life: 14,48
+Number of plants: 15
+Average energy of living animals: 20,56
+Most popular genes of all animals: 0
+
+
+Era number 66 statistics:
+Statistics:
+Number of living animals: 38
+Average length of life: 14,43
+Number of plants: 16
+Average energy of living animals: 19,61
+Most popular genes of all animals: 0
+
+
+Era number 67 statistics:
+Statistics:
+Number of living animals: 39
+Average length of life: 14,48
+Number of plants: 16
+Average energy of living animals: 18,67
+Most popular genes of all animals: 0
+
+
+Era number 68 statistics:
+Statistics:
+Number of living animals: 37
+Average length of life: 14,61
+Number of plants: 16
+Average energy of living animals: 19,78
+Most popular genes of all animals: 0
+
+
+Era number 69 statistics:
+Statistics:
+Number of living animals: 39
+Average length of life: 14,56
+Number of plants: 18
+Average energy of living animals: 18,36
+Most popular genes of all animals: 0
+
+
+Era number 70 statistics:
+Statistics:
+Number of living animals: 40
+Average length of life: 14,70
+Number of plants: 19
+Average energy of living animals: 16,93
+Most popular genes of all animals: 0
+
+
+Era number 71 statistics:
+Statistics:
+Number of living animals: 41
+Average length of life: 14,76
+Number of plants: 18
+Average energy of living animals: 16,05
+Most popular genes of all animals: 0
+
+
+Era number 72 statistics:
+Statistics:
+Number of living animals: 39
+Average length of life: 14,98
+Number of plants: 19
+Average energy of living animals: 17,41
+Most popular genes of all animals: 0
+
+
+Era number 73 statistics:
+Statistics:
+Number of living animals: 37
+Average length of life: 15,19
+Number of plants: 19
+Average energy of living animals: 17,89
+Most popular genes of all animals: 0
+
+
+Era number 74 statistics:
+Statistics:
+Number of living animals: 37
+Average length of life: 15,21
+Number of plants: 20
+Average energy of living animals: 18,03
+Most popular genes of all animals: 0
+
+
+Era number 75 statistics:
+Statistics:
+Number of living animals: 34
+Average length of life: 15,40
+Number of plants: 20
+Average energy of living animals: 19,21
+Most popular genes of all animals: 0
+
+
+Era number 76 statistics:
+Statistics:
+Number of living animals: 32
+Average length of life: 15,49
+Number of plants: 21
+Average energy of living animals: 20,69
+Most popular genes of all animals: 0
+
+
+Era number 77 statistics:
+Statistics:
+Number of living animals: 33
+Average length of life: 15,49
+Number of plants: 19
+Average energy of living animals: 19,73
+Most popular genes of all animals: 0
+
+
+Era number 78 statistics:
+Statistics:
+Number of living animals: 33
+Average length of life: 15,49
+Number of plants: 18
+Average energy of living animals: 21,21
+Most popular genes of all animals: 0
+
+
+Era number 79 statistics:
+Statistics:
+Number of living animals: 31
+Average length of life: 15,66
+Number of plants: 19
+Average energy of living animals: 23,52
+Most popular genes of all animals: 0
+
+
+Era number 80 statistics:
+Statistics:
+Number of living animals: 32
+Average length of life: 15,65
+Number of plants: 21
+Average energy of living animals: 22,47
+Most popular genes of all animals: 0
+
+
+Era number 81 statistics:
+Statistics:
+Number of living animals: 33
+Average length of life: 15,74
+Number of plants: 22
+Average energy of living animals: 20,82
+Most popular genes of all animals: 0
+
+
+Era number 82 statistics:
+Statistics:
+Number of living animals: 34
+Average length of life: 15,65
+Number of plants: 21
+Average energy of living animals: 19,29
+Most popular genes of all animals: 0
+
+
+Era number 83 statistics:
+Statistics:
+Number of living animals: 35
+Average length of life: 15,66
+Number of plants: 23
+Average energy of living animals: 18,94
+Most popular genes of all animals: 0
+
+
+Era number 84 statistics:
+Statistics:
+Number of living animals: 35
+Average length of life: 15,76
+Number of plants: 22
+Average energy of living animals: 17,97
+Most popular genes of all animals: 0
+
+
+Era number 85 statistics:
+Statistics:
+Number of living animals: 34
+Average length of life: 15,93
+Number of plants: 23
+Average energy of living animals: 18,68
+Most popular genes of all animals: 0
+
+
+Era number 86 statistics:
+Statistics:
+Number of living animals: 36
+Average length of life: 15,86
+Number of plants: 23
+Average energy of living animals: 17,28
+Most popular genes of all animals: 0
+
+
+Era number 87 statistics:
+Statistics:
+Number of living animals: 38
+Average length of life: 15,79
+Number of plants: 19
+Average energy of living animals: 16,50
+Most popular genes of all animals: 0
+
+
+Era number 88 statistics:
+Statistics:
+Number of living animals: 40
+Average length of life: 15,74
+Number of plants: 14
+Average energy of living animals: 17,75
+Most popular genes of all animals: 0
+
+
+Era number 89 statistics:
+Statistics:
+Number of living animals: 40
+Average length of life: 15,86
+Number of plants: 15
+Average energy of living animals: 20,27
+Most popular genes of all animals: 0
+
+
+Era number 90 statistics:
+Statistics:
+Number of living animals: 43
+Average length of life: 15,82
+Number of plants: 15
+Average energy of living animals: 18,40
+Most popular genes of all animals: 0
+
+
+Era number 91 statistics:
+Statistics:
+Number of living animals: 47
+Average length of life: 15,72
+Number of plants: 17
+Average energy of living animals: 16,77
+Most popular genes of all animals: 0
+
+
+Era number 92 statistics:
+Statistics:
+Number of living animals: 49
+Average length of life: 15,72
+Number of plants: 15
+Average energy of living animals: 15,14
+Most popular genes of all animals: 0
+
+
+Era number 93 statistics:
+Statistics:
+Number of living animals: 52
+Average length of life: 15,73
+Number of plants: 14
+Average energy of living animals: 14,48
+Most popular genes of all animals: 0
+
+
+Era number 94 statistics:
+Statistics:
+Number of living animals: 55
+Average length of life: 15,75
+Number of plants: 12
+Average energy of living animals: 13,84
+Most popular genes of all animals: 0
+
+
+Era number 95 statistics:
+Statistics:
+Number of living animals: 56
+Average length of life: 15,93
+Number of plants: 11
+Average energy of living animals: 14,04
+Most popular genes of all animals: 0
+
+
+Era number 96 statistics:
+Statistics:
+Number of living animals: 56
+Average length of life: 15,95
+Number of plants: 12
+Average energy of living animals: 14,16
+Most popular genes of all animals: 0
+
+
+Era number 97 statistics:
+Statistics:
+Number of living animals: 55
+Average length of life: 16,12
+Number of plants: 12
+Average energy of living animals: 13,44
+Most popular genes of all animals: 0
+
+
+Era number 98 statistics:
+Statistics:
+Number of living animals: 54
+Average length of life: 16,28
+Number of plants: 11
+Average energy of living animals: 13,44
+Most popular genes of all animals: 0
+
+
+Era number 99 statistics:
+Statistics:
+Number of living animals: 53
+Average length of life: 16,44
+Number of plants: 11
+Average energy of living animals: 13,85
+Most popular genes of all animals: 0
+
+
