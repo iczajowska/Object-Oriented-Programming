@@ -2,11 +2,16 @@ package agh.cs.lab8;
 
 
 import java.util.*;
-import java.text.DecimalFormat;
 import com.google.common.collect.*;
 
 public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
+
+    private Statistics mapStatistics ;
+    private Random generator = new Random();
+    private ListMultimap<Vector2d, IMapElement> mapElements =ArrayListMultimap.create();
     protected List<Animal> animals = new ArrayList<>();
+    protected List<Animal> deadAnimals = new ArrayList<>();
+
     private Vector2d lowerLeft;
     private Vector2d upperRight;
     private Vector2d jungleLowerLeft;
@@ -14,20 +19,6 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
     private final int startEnergy;
     private final int plantEnergy;
     private final int moveEnergy;
-    private Random generator = new Random();
-    private ListMultimap<Vector2d, IMapElement> mapElements =ArrayListMultimap.create();
-
-
-    //statistic parameters
-    private int liveAnimals=0;
-    private int deadAnimals=0;
-    private int plantNumber=0;
-    private double avgLengthOfLife=0;
-    private int totalSumOfLivingDays=0;
-    private int totalSumOfLivingEnergy=0;
-    private double avgEnergy=0;
-    private int [] popularGen=new int [8];
-    private static DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
 
     public NeverEndingMap(int width, int height,int numbersOfAnimals, double junglePercent, int plantEnergy, int moveEnergy, int startEnergy){
@@ -39,7 +30,7 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         this.plantEnergy=plantEnergy;
         this.moveEnergy=moveEnergy;
         this.startEnergy=startEnergy;
-        this.liveAnimals=numbersOfAnimals;
+        this.mapStatistics = new Statistics();
 
         if(this.jungleLowerLeft.precedes(this.lowerLeft) )
             throw new IllegalArgumentException("Wrong jungleRatio start parameter");
@@ -53,25 +44,23 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         if(plantEnergy<=0 || moveEnergy<=0 || startEnergy<=0)
             throw new IllegalArgumentException("Energy parameters must be greater than 0");
 
-        for(int i=0; i<8; i++){
-            this.popularGen[i]=0;
-        }
-
         for(int i=0; i<numbersOfAnimals; i++)
         placeFirstAnimals();
+
+        //System.out.println(jungleLowerLeft.toString()+" "+jungleUpperRight.toString()+"\n"+lowerLeft.toString()+" "+upperRight.toString());
     }
 
 
     @Override
     public void run() {
         deleteDeadAnimals();
-        totalSumOfLivingEnergy=0;
+        this.mapStatistics.clearTotalSumOfLivingEnergy();
         for(Animal animal:animals){
             animal.move();
             animal.reduceEnergy(this.moveEnergy);
-            //System.out.println(animal.getEnergy()+" "+animal.getGeneticCodeString());
-            totalSumOfLivingDays++;
-            totalSumOfLivingEnergy+=animal.getEnergy();
+            //System.out.println(animal.getIdOfAnimal()+" "+animal.getEnergy()+" "+animal.getGeneticCodeString());
+            this.mapStatistics.addToTotalSumOfLivingDays();
+            this.mapStatistics.addToTotalSumOfLivingEnergy(animal);
         }
         animalEatPlant();
         animalReproduce();
@@ -123,7 +112,7 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
                     Vector2d childPosition=childPosition(firstAnimal);
                     //System.out.println(childPosition);
 
-                    Animal child=new Animal(this,childPosition,firstAnimal,secondAnimal,this.startEnergy);
+                    Animal child=new Animal(this,childPosition,firstAnimal,secondAnimal,this.startEnergy,this.mapStatistics.getTotalNumberOfAnimals());
                     placeAnimal(child);
                 }
 
@@ -137,8 +126,9 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         this.mapElements.put(animal.getPosition(), animal);
         this.animals.add(animal);
         animal.addObserver(this);
-        liveAnimals++;
-        addToPopularGenes(animal);
+        this.mapStatistics.addLivingAnimal();
+        this.mapStatistics.addToPopularGenes(animal);
+
         return true;
     }
 
@@ -154,10 +144,12 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         }
 
         for( Animal deadAnimal: deadAnimalsList){
+
             mapElements.remove(deadAnimal.getPosition(),deadAnimal);
             animals.remove(deadAnimal);
-            liveAnimals--;
-            deadAnimals++;
+            deadAnimals.add(deadAnimal);
+            this.mapStatistics.removeAnimalFromLivingAnimals();
+            deadAnimal.animalDeath(this.mapStatistics.getDay());
         }
     }
 
@@ -166,7 +158,7 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
 
         for(Animal animalsWithGrass:animals){
             Grass grassToRemove = null;
-            if(mapElements.get(animalsWithGrass.getPosition()).get(0) instanceof Grass){
+            if(mapElements.get(animalsWithGrass.getPosition()).get(0) instanceof Grass){   //if the first element on the position is grass
                 int maxEnergyOfAnimal=0;
                 List <Animal> maxEnergyAnimals=new ArrayList<>();
                 grassToRemove= (Grass) mapElements.get(animalsWithGrass.getPosition()).get(0);
@@ -199,7 +191,7 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
 
     public void removeGrass(Vector2d grassPosition, Grass grassToRemove){
         this.mapElements.remove(grassPosition,grassToRemove);
-        this.plantNumber--;
+        this.mapStatistics.removePlant();
     }
 
     @Override
@@ -220,7 +212,7 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
             Vector2d grassSavannaPosition = new Vector2d(xSavanna, ySavanna);
             Grass savannaGrass = new Grass(grassSavannaPosition, this.plantEnergy);
             this.mapElements.put(grassSavannaPosition,savannaGrass);
-            plantNumber++;
+            this.mapStatistics.addPlant();
         }
 
         int yJungle;
@@ -229,7 +221,7 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         int countJungle=(jungleUpperRight.getX()-jungleLowerLeft.getX()+1)*(jungleUpperRight.getY()-jungleLowerLeft.getY()+1);
         do{
             xJungle=generator.nextInt(jungleUpperRight.getX()-jungleLowerLeft.getX()+1)+jungleLowerLeft.getX();
-            yJungle=generator.nextInt(jungleUpperRight.getY()-jungleLowerLeft.getY()+1)+jungleUpperRight.getY();
+            yJungle=generator.nextInt(jungleUpperRight.getY()-jungleLowerLeft.getY()+1)+jungleLowerLeft.getY();
             countJungle--;
             if(countJungle == 0) break;
         }while(!this.insideJungle(new Vector2d(xJungle,yJungle)) || isOccupied(new Vector2d(xJungle,yJungle)) );
@@ -238,7 +230,7 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
             Vector2d grassJunglePosition = new Vector2d(xJungle, yJungle);
             Grass jungleGrass = new Grass(grassJunglePosition, this.plantEnergy);
             this.mapElements.put(grassJunglePosition,jungleGrass);
-            plantNumber++;
+            this.mapStatistics.addPlant();
         }
 
     }
@@ -262,12 +254,15 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         } while (isOccupied(new Vector2d(x, y)));
 
         Vector2d vector=new Vector2d(x,y);
-        Animal firstAnimal = new Animal(this, vector, this.startEnergy);
+        Animal firstAnimal = new Animal(this, vector, this.startEnergy,this.mapStatistics.getTotalNumberOfAnimals());
 
         this.mapElements.put(vector, firstAnimal);
         this.animals.add(firstAnimal);
         firstAnimal.addObserver(this);
-        addToPopularGenes(firstAnimal);
+        this.mapStatistics.addLivingAnimal();
+
+        //todo genetic statistics
+        this.mapStatistics.addToPopularGenes(firstAnimal);
     }
 
     @Override
@@ -287,8 +282,6 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         return vector2d.follow(this.jungleLowerLeft) && vector2d.precedes(this.jungleUpperRight);
     }
 
-
-
     @Override
     public boolean isOccupied(Vector2d position) {
         return objectsAt(position).size()!=0;
@@ -300,12 +293,13 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
     }
 
     public void positionChanged(Vector2d oldPosition, Vector2d newPosition, Animal animal){
-
         this.mapElements.remove(oldPosition,animal);
         this.mapElements.put(newPosition,animal);
-
     }
 
+    public boolean areAnimalsAlive(){
+        return this.animals.size()>0;
+    }
 
     @Override
     public Vector2d vectorPosition(Vector2d animalPosition, Vector2d toMove){
@@ -353,48 +347,40 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         return this.upperRight;
     }
 
-    public void addToPopularGenes(Animal animal){
-        int[] genes = animal.getGeneticCode();
-        for(int i=0; i<32; i++){
-            this.popularGen[genes[i]]++;
-        }
-    }
-
-    public List <Integer> mostPopularGenes(){
-        List <Integer> listOfGenes=new ArrayList<>();
-        int max=0;
-        for(int i=0; i<8; i++){
-            if(popularGen[i]>max){
-                listOfGenes.clear();
-                max=popularGen[i];
-                listOfGenes.add(i);
-            }else if(popularGen[i]==max){
-                listOfGenes.add(i);
-            }
-        }
-        return listOfGenes;
-    }
 
     public String getStatistics(){
-
-        String s="Statistics:\n";
-        avgLengthOfLife=(double) totalSumOfLivingDays/(liveAnimals+deadAnimals);
-        s+="Number of living animals: "+liveAnimals+"\n";
-        s+="Average length of life: "+ decimalFormat.format(avgLengthOfLife) +"\n";
-        s+="Number of plants: "+plantNumber+"\n";
-        avgEnergy=(double)totalSumOfLivingEnergy/liveAnimals; //TODO round
-        s+="Average energy of living animals: "+ decimalFormat.format(avgEnergy)+"\n";
-        s+="Most popular genes of all animals:";
-        for(int gen:mostPopularGenes()){ //most popular genes of all animals (living and dead)
-            s+=" "+gen;
-        }
-        s+="\n";
-        return s;
+        return this.mapStatistics.toString();
     }
+
+    public String getTotalStatistics() {return this.mapStatistics.getTotalStatistics();}
+
 
     @Override
     public String toString() {
         MapVisualizer visualizer = new MapVisualizer(this);
-        return getStatistics()+"\n"+visualizer.draw(lowerLeft,upperRight);
+        return this.mapStatistics.toString()+"\n"+visualizer.draw(lowerLeft,upperRight);
+    }
+
+    public int getTotalNumberOfAnimals(){
+        return deadAnimals.size()+animals.size();
+    }
+
+    public String getAnimalStatistic(int id){
+        Animal findAnimal=null;
+        for(Animal animal:animals){
+            if(animal.getIdOfAnimal()==id)  {
+                findAnimal=animal;
+                return findAnimal.seeAnimalStatistic();
+            }
+        }
+
+        for(Animal deadAnimal:deadAnimals){
+            if(deadAnimal.getIdOfAnimal()==id)  {
+                findAnimal=deadAnimal;
+                return findAnimal.seeAnimalStatistic();
+            }
+        }
+
+        return "Animal was not found";
     }
 }

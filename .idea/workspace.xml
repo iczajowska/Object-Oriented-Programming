@@ -37,14 +37,14 @@
     <property name="settings.editor.selected.configurable" value="experimental" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/agh/cs/lab8" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="agh.cs.lab8" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/agh/cs/lab8" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunManager" selected="Application.World8">
@@ -69,15 +69,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapDirectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapDirectionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NeverEndingMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,13 +88,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Vector2dTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Vector2dTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.World8" />
-        <item itemvalue="JUnit.NeverEndingMapTest" />
         <item itemvalue="JUnit.All in lab1" />
+        <item itemvalue="JUnit.Vector2dTest" />
+        <item itemvalue="JUnit.NeverEndingMapTest" />
         <item itemvalue="JUnit.NeverEndingMapTest.isOccupiedTest" />
-        <item itemvalue="JUnit.MapDirectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -141,30 +141,42 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="768" y="264" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1576510439790" />
+    <state x="799" y="444" width="312" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576623870683">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="799" y="444" width="312" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576623870683" />
+    <state x="538" y="210" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1576623746828">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="538" y="210" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1576623746828" />
     <state x="715" y="228" width="918" height="630" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1576506938739">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="715" y="228" width="918" height="630" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576506938739" />
+    <state x="679" y="27" width="552" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576605926264">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="679" y="27" width="552" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576605926264" />
     <state x="295" y="300" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576424170936">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="295" y="300" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1576424170936" />
-    <state width="1874" height="88" key="GridCell.Tab.0.bottom" timestamp="1576576304121">
+    <state width="1874" height="222" key="GridCell.Tab.0.bottom" timestamp="1576783521929">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="88" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1576576304121" />
-    <state width="1874" height="88" key="GridCell.Tab.0.center" timestamp="1576576304119">
+    <state width="1874" height="222" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1576783521929" />
+    <state width="1874" height="222" key="GridCell.Tab.0.center" timestamp="1576783521928">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="88" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1576576304119" />
-    <state width="1874" height="88" key="GridCell.Tab.0.left" timestamp="1576576304118">
+    <state width="1874" height="222" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1576783521928" />
+    <state width="1874" height="222" key="GridCell.Tab.0.left" timestamp="1576783521928">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="88" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1576576304118" />
-    <state width="1874" height="88" key="GridCell.Tab.0.right" timestamp="1576576304120">
+    <state width="1874" height="222" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1576783521928" />
+    <state width="1874" height="222" key="GridCell.Tab.0.right" timestamp="1576783521928">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="88" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576576304120" />
+    <state width="1874" height="222" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576783521928" />
     <state width="1874" height="344" key="GridCell.Tab.1.bottom" timestamp="1576424028410">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -181,21 +193,25 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1874" height="344" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576424028410" />
-    <state x="370" y="121" width="1024" height="845" key="SettingsEditor" timestamp="1576514826828">
+    <state x="370" y="121" width="1024" height="845" key="SettingsEditor" timestamp="1576681654103">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="370" y="121" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1576514826828" />
-    <state x="608" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576504477818">
+    <state x="370" y="121" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1576681654103" />
+    <state x="608" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576676737836">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="608" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576504477818" />
-    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576506824361">
+    <state x="608" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576676737836" />
+    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576604337808">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1053@0.27.1920.1053" timestamp="1576506824361" />
+    <state x="66" y="438" width="686" height="225" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1053@0.27.1920.1053" timestamp="1576604337808" />
     <state x="255" y="235" width="440" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576508486668">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="255" y="235" width="440" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1576508486668" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576597808317">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1576597808317" />
   </component>
 </project>

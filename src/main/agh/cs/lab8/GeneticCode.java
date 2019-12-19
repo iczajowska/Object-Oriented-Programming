@@ -91,6 +91,18 @@ public class GeneticCode {
         return s.toString();
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 13;
+        for(int i=0; i<dnaNum; i++) {
+            if(i%2==0)
+            hash += this.dna[i] * 31;
+            else
+            hash += this.dna[i] * 17;
+        }
+        return hash;
+    }
+
 
     public int getGeneticCodeByIndex(int i){
         return this.dna[i];

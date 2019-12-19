@@ -16,7 +16,7 @@ public class Grass implements IMapElement {
 
     @Override
     public String toString(){
-        return Character.toString((char) 10048);
+        return Character.toString((char) 10048)+ " ";
     }
 
     public int additionalEnergy(){

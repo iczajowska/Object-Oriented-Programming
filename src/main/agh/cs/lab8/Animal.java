@@ -13,16 +13,21 @@ public class Animal implements IMapElement {
     private final int minReproduceEnergy;
     private List <IPositionChangeObserver> observers = new ArrayList<>();
 //TODO długość życia mysia pysia
-    private int livingLength =0;
+    private int livingLength;
+    private int dayOfDeath=0;
+    private int idOfAnimal;
 
 
-    public Animal(IWorldMap map, Vector2d initialPosition, int startEnergy){
+
+    public Animal(IWorldMap map, Vector2d initialPosition, int startEnergy, int idOfAnimal){
         this.map=map;
         this.position=initialPosition;
         this.minReproduceEnergy = startEnergy/2;
         this.geneticCode=new GeneticCode();
         this.energy=startEnergy;
         this.orientation=MapDirection.getRandomDirection();
+        this.idOfAnimal=idOfAnimal;
+
     }
 /*
     public Animal(IWorldMap map, int startEnergy){
@@ -34,13 +39,14 @@ public class Animal implements IMapElement {
     }
 */
 
-    public Animal(IWorldMap map, Vector2d initialPosition, Animal firstParent, Animal secondParent, int startEnergy){
+    public Animal(IWorldMap map, Vector2d initialPosition, Animal firstParent, Animal secondParent, int startEnergy, int idOfAnimal){
         this.map=map;
         this.position=initialPosition;
         this.geneticCode=new GeneticCode(firstParent.geneticCode,secondParent.geneticCode);
         this.energy= (int) (0.25*firstParent.getEnergy())+ (int) (0.25*secondParent.getEnergy());
         this.minReproduceEnergy=startEnergy/2;
         this.orientation= MapDirection.getRandomDirection();
+        this.idOfAnimal=idOfAnimal;
 
         firstParent.reduceEnergy((int) (0.25*firstParent.getEnergy()));
         secondParent.reduceEnergy((int) (0.25*secondParent.getEnergy()));
@@ -144,7 +150,32 @@ public class Animal implements IMapElement {
         return this.geneticCode.toString();
     }
 
+    public  GeneticCode animalGeneticCode() {return this.geneticCode; }
+
     public int [] getGeneticCode(){
         return this.geneticCode.getGeneticCode();
+    }
+
+    public int getIdOfAnimal(){
+        return this.idOfAnimal;
+    }
+
+    public void animalDeath(int dayOfDeath){
+        this.dayOfDeath=dayOfDeath;
+    }
+
+    public String seeAnimalStatistic(){
+        String s="";
+        if(this.dayOfDeath == 0) {
+
+
+            s += idOfAnimal + " animal still lives\n";
+        }
+        else {
+            s += idOfAnimal + " animal died on " + dayOfDeath + " day\nit lived " + this.livingLength + "\n";
+        }
+        s+="animal position: "+this.position.toString()+"\n"+"animal direction: "+this.orientation.toString()+"\nanimal genetic code: "+this.geneticCode.toString()+"\n";
+
+        return s;
     }
 }

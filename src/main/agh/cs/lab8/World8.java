@@ -31,19 +31,27 @@ public class World8 {
             double jungleRatio = (Double) jsonObject.get("jungleRatio");
             int animalNumber = ((Long) jsonObject.get("animalNumber")).intValue();
 
-            IWorldMap neverEndingMap=new NeverEndingMap(mapWidth,mapHeight,animalNumber,jungleRatio, plantEnergy, moveEnergy, startEnergy);
-            System.out.println(neverEndingMap.toString());
+            NeverEndingMap firstNeverEndingMap = new NeverEndingMap(mapWidth,mapHeight,animalNumber,jungleRatio, plantEnergy, moveEnergy, startEnergy);
+            //System.out.println(neverEndingMap.toString());
+            NeverEndingMap secondNeverEndingMap =  new NeverEndingMap(mapWidth,mapHeight,animalNumber,jungleRatio, plantEnergy, moveEnergy, startEnergy);
 
-            PrintWriter zapis = new PrintWriter(dir+"/results_by_era.txt");
-            int era=100;
+
+
+            Visualization visualization = new Visualization(firstNeverEndingMap,secondNeverEndingMap);
+            visualization.startAnimation();
+
+            //NeverEndingMap neverEndingMap = new NeverEndingMap(mapWidth,mapHeight,animalNumber,jungleRatio, plantEnergy, moveEnergy, startEnergy);
+            //PrintWriter zapis = new PrintWriter(dir+"/results_by_era.txt");
+            /*int era=4;
 
             for(int i=0; i<era; i++) {
                 neverEndingMap.run();
                 System.out.println(neverEndingMap);
-                //System.out.print("\033[H\033[2J"); czyszczenie ekranu
-                zapis.println("Era number "+i+" statistics:\n"+((NeverEndingMap) neverEndingMap).getStatistics()+"\n");
-            }
-            zapis.close();
+                //zapis.println("Era number "+i+" statistics:\n"+((NeverEndingMap) neverEndingMap).getStatistics()+"\n");
+            }*/
+            //zapis.println(firstNeverEndingMap.getTotalStatistics());
+            //zapis.println(secondNeverEndingMap.getTotalStatistics());
+            //zapis.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

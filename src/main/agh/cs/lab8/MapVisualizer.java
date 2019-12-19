@@ -4,8 +4,8 @@ package agh.cs.lab8;
 import java.util.List;
 
 public class MapVisualizer {
-    private static final String EMPTY_CELL = " ";
-    private static final String FRAME_SEGMENT = "-";
+    private static final String EMPTY_CELL = "   ";
+    private static final String FRAME_SEGMENT = "--";
     private static final String CELL_SEGMENT = "|";
     private IWorldMap map;
 
@@ -28,17 +28,17 @@ public class MapVisualizer {
      */
     public String draw(Vector2d lowerLeft, Vector2d upperRight) {
         StringBuilder builder = new StringBuilder();
-        for (int i = upperRight.y + 1; i >= lowerLeft.y - 1; i--) {
-            if (i == upperRight.y + 1) {
+        for (int i = upperRight.getY() + 1; i >= lowerLeft.getY() - 1; i--) {
+            if (i == upperRight.getY() + 1) {
                 builder.append(drawHeader(lowerLeft, upperRight));
             }
             builder.append(String.format("%3d: ", i));
-            for (int j = lowerLeft.x; j <= upperRight.x + 1; j++) {
-                if (i < lowerLeft.y || i > upperRight.y) {
-                    builder.append(drawFrame(j <= upperRight.x));
+            for (int j = lowerLeft.getX(); j <= upperRight.getX() + 1; j++) {
+                if (i < lowerLeft.getY() || i > upperRight.getY()) {
+                    builder.append(drawFrame(j <= upperRight.getX()));
                 } else {
                     builder.append(CELL_SEGMENT);
-                    if (j <= upperRight.x) {
+                    if (j <= upperRight.getX()) {
                         builder.append(drawObject(new Vector2d(j, i)));
                     }
                 }
@@ -59,8 +59,8 @@ public class MapVisualizer {
     private String drawHeader(Vector2d lowerLeft, Vector2d upperRight) {
         StringBuilder builder = new StringBuilder();
         builder.append(" y\\x ");
-        for (int j = lowerLeft.x; j < upperRight.x + 1; j++) {
-            builder.append(String.format("%2d", j));
+        for (int j = lowerLeft.getX(); j < upperRight.getX() + 1; j++) {
+            builder.append(String.format("%3d", j));
         }
         builder.append(System.lineSeparator());
         return builder.toString();
@@ -74,7 +74,7 @@ public class MapVisualizer {
             if (objects != null) {
                 //result = objects.toString();
                 if(objects.size()>1){
-                    result = String.valueOf(objects.size());
+                    result = String.valueOf(objects.size())+" ";
                 }
                 else{
                     result = objects.get(0).toString();

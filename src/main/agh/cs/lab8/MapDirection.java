@@ -18,21 +18,21 @@ public enum MapDirection {
     public String toString() {
         switch (this) {
             case EAST:
-                return  Character.toString((char) 8594);
+                return  Character.toString((char) 8594) + " ";
             case WEST:
-                return Character.toString((char) 8592);
+                return Character.toString((char) 8592) + " ";
             case SOUTH:
-                return Character.toString((char) 8595);
+                return Character.toString((char) 8595) + " ";
             case SOUTHEAST:
-                return Character.toString((char) 8600);
+                return Character.toString((char) 8600) + " ";
             case SOUTHWEST:
-                return Character.toString((char) 8601);
+                return Character.toString((char) 8601) + " ";
             case NORTH:
-                return Character.toString((char) 8593);
+                return Character.toString((char) 8593) + " ";
             case NORTHEAST:
-                return Character.toString((char) 8599);
+                return Character.toString((char) 8599) + " ";
             case NORTHWEST:
-                return Character.toString((char) 8598);
+                return Character.toString((char) 8598) + " ";
         }
         return null;
     }
