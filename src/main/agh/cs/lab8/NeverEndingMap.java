@@ -47,7 +47,6 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         for(int i=0; i<numbersOfAnimals; i++)
         placeFirstAnimals();
 
-        //System.out.println(jungleLowerLeft.toString()+" "+jungleUpperRight.toString()+"\n"+lowerLeft.toString()+" "+upperRight.toString());
     }
 
 
@@ -58,7 +57,6 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
         for(Animal animal:animals){
             animal.move();
             animal.reduceEnergy(this.moveEnergy);
-            //System.out.println(animal.getIdOfAnimal()+" "+animal.getEnergy()+" "+animal.getGeneticCodeString());
             this.mapStatistics.addToTotalSumOfLivingDays();
             this.mapStatistics.addToTotalSumOfLivingEnergy(animal);
         }
@@ -80,7 +78,6 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
 
         if(positionsManyAnimals.size()!=0) {
             for (Vector2d vector2d : positionsManyAnimals) {
-                //System.out.println(vector2d);
                 List <IMapElement> animalsAtTheSamePosition=objectsAt(vector2d);    //list of animals at the same position
                 Animal firstAnimal=null;
                 int firstMaxEnergy=0;
@@ -107,11 +104,7 @@ public class NeverEndingMap implements IWorldMap, IPositionChangeObserver {
                 }
 
                 if(firstAnimal!=null && secondAnimal!=null){ //first and second animal with enough energy to reproduce
-                    //System.out.println(firstAnimal.toString()+firstAnimal.getEnergy()+" "+secondAnimal.toString()+secondAnimal.getEnergy());
-
                     Vector2d childPosition=childPosition(firstAnimal);
-                    //System.out.println(childPosition);
-
                     Animal child=new Animal(this,childPosition,firstAnimal,secondAnimal,this.startEnergy,this.mapStatistics.getTotalNumberOfAnimals());
                     placeAnimal(child);
                 }

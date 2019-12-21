@@ -10,13 +10,8 @@ public class GeneticCodeTest {
     GeneticCode g2=new GeneticCode();
 
     public static final int dnaNum=32;
-
-        //System.out.println(g1);
-
-        //System.out.println(g2);
-
     GeneticCode g3=new GeneticCode(g1,g2);
-        //System.out.println(g3);
+
     @Test
     public void CheckGenesTest(){
         int [] tab1 = new int [genesNum];

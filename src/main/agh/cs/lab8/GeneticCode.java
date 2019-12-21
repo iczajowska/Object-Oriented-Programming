@@ -10,10 +10,8 @@ public class GeneticCode {
 
     public GeneticCode(){
         for(int i = 0; i< dnaNum; i++){
-            //dna.add(generator.nextInt(8));
             this.dna[i]=generator.nextInt(genesNum);
         }
-        //Collections.sort(dna);
         CheckGenes(this.dna);
 
 
@@ -32,9 +30,6 @@ public class GeneticCode {
             index1=index2;
             index2=tmp;
         }
-        //System.out.println(index1);
-        //System.out.println(index2);
-
         for(int i = 0; i< dnaNum; i++){
             if(i<=index1 || i>=index2){
                 this.dna[i]=firstParent.dna[i];

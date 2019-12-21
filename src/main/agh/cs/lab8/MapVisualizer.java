@@ -65,14 +65,13 @@ public class MapVisualizer {
         builder.append(System.lineSeparator());
         return builder.toString();
     }
-//zmienić objectat
+
     private String drawObject(Vector2d currentPosition) {
         String result = null;
         if (this.map.isOccupied(currentPosition)) {
             List <IMapElement> objects =  this.map.objectsAt(currentPosition);
 
             if (objects != null) {
-                //result = objects.toString();
                 if(objects.size()>1){
                     result = String.valueOf(objects.size())+" ";
                 }

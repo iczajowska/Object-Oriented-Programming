@@ -9,7 +9,6 @@ public class TotalStatistics {
     private double avgLengthOfLife;
     private int totalSumOfDescendants; //TODO add to parent number of decendants + add
     private double avgEnergy;
-    //most popular gen
     private static DecimalFormat decimalFormat = new DecimalFormat("0.00");
     private int day;
     private String geneticCode;

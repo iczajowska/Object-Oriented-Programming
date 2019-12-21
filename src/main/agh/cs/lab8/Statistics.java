@@ -1,9 +1,7 @@
 package agh.cs.lab8;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Statistics {
@@ -38,29 +36,6 @@ public class Statistics {
         totalStatistics = new TotalStatistics();
 
     }
-/*
-    public void addToPopularGenes(Animal animal){
-        int[] genes = animal.getGeneticCode();
-        for(int i=0; i<32; i++){
-            this.popularGen[genes[i]]++;
-        }
-    }
-
-    public List<Integer> mostPopularGenes(){
-        List <Integer> listOfGenes=new ArrayList<>();
-        int max=0;
-        for(int i=0; i<8; i++){
-            if(popularGen[i]>max){
-                listOfGenes.clear();
-                max=popularGen[i];
-                listOfGenes.add(i);
-            }else if(popularGen[i]==max){
-                listOfGenes.add(i);
-            }
-        }
-        return listOfGenes;
-    }
-*/
 
     public void addToPopularGenes(Animal animal){
         GeneticCode animalGeneticCode=animal.animalGeneticCode();

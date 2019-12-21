@@ -59,7 +59,7 @@ public class Visualization {
         searchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                //todo
+
                 boolean flag = true;
                 String s=jTextField.getText();
                 for(int i=0; i<s.length(); i++){
@@ -77,9 +77,6 @@ public class Visualization {
                     firstAnimalDetails.setText("Incorrect search. Choose the animal by id. Available numbers: 0-"+firstNeverEndingMap.getTotalNumberOfAnimals());
                     secondAnimalDetails.setText("Incorrect search. Choose the animal by id. Available numbers: 0-"+secondNeverEndingMap.getTotalNumberOfAnimals());
                 }
-
-                   //System.out.println(secondNeverEndingMap.getAnimalStatistic(id));
-
             }
         });
 
@@ -90,12 +87,6 @@ public class Visualization {
 
 
         startStopButton.addActionListener( new ActionListener() {
-            // The action listener that responds to the
-            // button starts or stops the animation.  It
-            // checks the value of timer to find out which
-            // to do.  Timer is non-null when the animation
-            // is running, so if timer is null, the
-            // animation needs to be started.
             public void actionPerformed(ActionEvent evt) {
                 if (timer == null)
                     startAnimation();
@@ -112,11 +103,12 @@ public class Visualization {
                 String dir = System.getProperty("user.dir");
                 PrintWriter zapis = null;
                 try {
-                    zapis = new PrintWriter(dir+"/results_by_era.txt");
+                    zapis = new PrintWriter(dir+"/results.txt");
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
                 zapis.println(firstNeverEndingMap.getTotalStatistics());
+                zapis.println("\n");
                 zapis.println(secondNeverEndingMap.getTotalStatistics());
                 zapis.close();
                 System.exit(0);
@@ -138,8 +130,6 @@ public class Visualization {
     }
 
     ActionListener timerListener = new ActionListener() {
-        // Define an action listener to respond to events
-        // from the timer.
         public void actionPerformed(ActionEvent evt) {
             if(!firstNeverEndingMap.areAnimalsAlive()){
                 firstTextArea.setText(firstNeverEndingMap.toString());
@@ -163,11 +153,8 @@ public class Visualization {
 
     public void startAnimation(){
         if (timer == null) {
-            // Start the animation by creating a Timer that
-            // will fire an event every 50 milliseconds, and
-            // will send those events to timerListener.
             timer = new Timer(100, timerListener);
-            timer.start();  // Make the time start running.
+            timer.start();
             startStopButton.setText("Stop");
             searchButton.setVisible(false);
             secondAnimalDetails.setVisible(false);
@@ -177,17 +164,21 @@ public class Visualization {
     }
 
     private void stopAnimation() {
-        // Stop the animation by stopping the timer, unless the
-        // animation is not running.
         if (timer != null) {
-            timer.stop();   // Stop the timer.
-            timer = null;   // Set timer variable to null, so that we
-            //   can tell that the animation isn't running.
+            timer.stop();
+            timer = null;
             startStopButton.setText("Start");
 
+            firstTextArea.setText(firstNeverEndingMap.toString());
+            frame.add(firstTextArea);
+            secondTextArea.setText(secondNeverEndingMap.toString());
+            frame.add(secondTextArea);
+            SwingUtilities.updateComponentTreeUI(frame);
             searchButton.setVisible(true);
-            secondAnimalDetails.setText("Animal Details. Choose the animal by id. Available numbers: 0-"+secondNeverEndingMap.getTotalNumberOfAnimals());
-            firstAnimalDetails.setText("Animal Details. Choose the animal by id. Available numbers: 0-"+firstNeverEndingMap.getTotalNumberOfAnimals());
+            int firstAnimalNumber=firstNeverEndingMap.getTotalNumberOfAnimals()-1;
+            int secondAnimalNumber=secondNeverEndingMap.getTotalNumberOfAnimals()-1;
+            secondAnimalDetails.setText("Animal Details. Choose the animal by id. Available numbers: 0-"+secondAnimalNumber);
+            firstAnimalDetails.setText("Animal Details. Choose the animal by id. Available numbers: 0-"+firstAnimalNumber);
             secondAnimalDetails.setVisible(true);
             firstAnimalDetails.setVisible(true);
             jTextField.setVisible(true);

@@ -1,0 +1,14 @@
+Total statistics after 484 days:
+Average number of living animals: 39,07
+Average length of life: 26,93
+Number of plants: 26,64
+Average energy of living animals: 28,14
+Most popular genes of all animals: 00000111122223334455555555566677
+
+
+Total statistics after 484 days:
+Average number of living animals: 40,05
+Average length of life: 24,53
+Number of plants: 65,40
+Average energy of living animals: 178,48
+Most popular genes of all animals: 00000001112222333444455555666677

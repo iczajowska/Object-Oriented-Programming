@@ -12,7 +12,6 @@ public class Animal implements IMapElement {
     private Random generator = new Random();
     private final int minReproduceEnergy;
     private List <IPositionChangeObserver> observers = new ArrayList<>();
-//TODO długość życia mysia pysia
     private int livingLength;
     private int dayOfDeath=0;
     private int idOfAnimal;
@@ -29,15 +28,6 @@ public class Animal implements IMapElement {
         this.idOfAnimal=idOfAnimal;
 
     }
-/*
-    public Animal(IWorldMap map, int startEnergy){
-        this.geneticCode=new GeneticCode();
-        this.map=map;
-        this.energy=startEnergy;
-        this.minReproduceEnergy=startEnergy/2;
-        this.orientation=MapDirection.getRandomDirection();
-    }
-*/
 
     public Animal(IWorldMap map, Vector2d initialPosition, Animal firstParent, Animal secondParent, int startEnergy, int idOfAnimal){
         this.map=map;
@@ -66,12 +56,6 @@ public class Animal implements IMapElement {
         Vector2d newCorrectPosition = this.map.vectorPosition(this.position,toMove);
         Vector2d oldPosition=this.position;
 
-        //System.out.println(this.geneticCode.getGeneticCodeByIndex(index));
-        //System.out.println(toMove.toString());
-        //System.out.println(oldPosition);
-        //System.out.println(newCorrectPosition);
-
-
         for (IPositionChangeObserver observer: observers){
             observer.positionChanged(oldPosition, newCorrectPosition, this);
         }
@@ -80,43 +64,6 @@ public class Animal implements IMapElement {
         this.livingLength++;
     }
 
-    public int lengthOfLiving(){
-        return this.livingLength;
-    }
-
-        /*switch (direction){
-            case RIGHT:
-                this.orientation=this.orientation.next();
-                break;
-            case LEFT:
-                this.orientation=this.orientation.previous();
-                break;
-            case FORWARD:
-                Vector2d v=this.orientation.toUnitVector();
-                v=this.position.add(v);
-
-                if (map.canMoveTo(this.position.add(v))){
-                    for(IPositionChangeObserver o:observers){
-                        o.positionChanged(this.position,v);
-
-                    }
-
-                    this.position=v;
-                }
-                break;
-            case BACKWARD:
-                Vector2d u=this.orientation.toUnitVector().opposite();
-                u=this.position.add(u);
-                if (map.canMoveTo(u)){
-                    for(IPositionChangeObserver o:observers){
-                        o.positionChanged(this.position,u);
-
-                    }
-
-                    this.position=u;
-                }
-                break;
-        }*/
     public boolean canReproduce(){
 
         return this.energy>=this.minReproduceEnergy;
